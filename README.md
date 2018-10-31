@@ -16,6 +16,7 @@ docker run --name tomcat -it --rm -d -p 8080:8080 tomcat-sample:1.0
 ```
 4. Navigate to http://localhost:8080/sample/ to check the started docker image with above created war file.
 
+#### The java code under src/main is of no use, its just as placeholder right now.
 
 ## You can verify the running docker with below command's
 ```
