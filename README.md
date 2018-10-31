@@ -5,6 +5,7 @@
 mvn clean verify
 ```
 Once the above is completed the file Example-0.0.1-SNAPSHOT.war will be created under target/ folder
+
 2. Now its time for docker, first build the docker image as below command, make sure you are running from the directory which have Dockerfile, otherwise add the dockerfile with path and name in the command too
 ```
 docker build -t tomcat-sample:1.0 .
@@ -16,7 +17,7 @@ docker run --name tomcat -it --rm -d -p 8080:8080 tomcat-sample:1.0
 4. Navigate to http://localhost:8080/sample/ to check the started docker image with above created war file.
 
 
-##You can verify the running docker with below command's
+## You can verify the running docker with below command's
 ```
 $docker ps -l
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                    NAMES
